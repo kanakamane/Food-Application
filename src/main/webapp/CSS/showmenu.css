@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f7;
+    padding: 20px 25px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.home-btn {
+    display: inline-block;
+
+    background: #3498db;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.page-title {
+    text-align: center;
+
+    font-size: 26px;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   MENU CONTAINER
+   4 CARDS PER ROW
+========================= */
+
+.menu-container {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+}
+
+
+/* =========================
+   MENU CARD
+========================= */
+
+.menu-card {
+
+    background: white;
+
+    height: 145px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.menu-image {
+
+    width: 105px;
+
+    height: 105px;
+
+    min-width: 105px;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    margin-right: 12px;
+
+}
+
+
+.menu-image img {
+
+    width: 105px;
+
+    height: 105px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* =========================
+   MENU DETAILS
+========================= */
+
+.menu-details {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+/* =========================
+   ITEM NAME
+========================= */
+
+.item-name {
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    margin-bottom: 5px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+
+    font-size: 11px;
+
+    color: #777;
+
+    line-height: 1.3;
+
+    height: 28px;
+
+    overflow: hidden;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #27ae60;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =========================
+   AVAILABILITY
+========================= */
+
+.availability {
+
+    font-size: 10px;
+
+    color: #555;
+
+    margin-bottom: 5px;
+
+}
+
+
+.availability strong {
+
+    color: #333;
+
+}
+
+
+/* =========================
+   AVAILABLE
+========================= */
+
+.available {
+
+    display: inline-block;
+
+    background: #e7f8ef;
+
+    color: #16864d;
+
+    padding: 2px 5px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   NOT AVAILABLE
+========================= */
+
+.not-available {
+
+    display: inline-block;
+
+    background: #fde8e8;
+
+    color: #d63031;
+
+    padding: 2px 5px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   CART SECTION
+========================= */
+
+.cart-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.cart-section label {
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    color: #555;
+
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.cart-section select {
+
+    width: 42px;
+
+    height: 24px;
+
+    padding: 2px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    background: white;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+.add-btn {
+
+    height: 24px;
+
+    padding: 0 8px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #27ae60;
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.add-btn:hover {
+
+    background: #219150;
+
+}
+
+
+/* =========================
+   UNAVAILABLE
+========================= */
+
+.unavailable-message {
+
+    font-size: 10px;
+
+    color: #d63031;
+
+    background: #fde8e8;
+
+    padding: 5px;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+}
+
+
+/* =========================
+   NO DATA
+========================= */
+
+.no-data {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 16px;
+
+    padding: 30px;
+
+}
